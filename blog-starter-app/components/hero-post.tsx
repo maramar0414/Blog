@@ -34,7 +34,7 @@ const HeroPost = ({
               href="/posts/[slug]"
               className="hover:underline"
             >
-              {title}
+              {title} 
             </Link>
           </h3>
           <div className="mb-4 md:mb-0 text-lg">
