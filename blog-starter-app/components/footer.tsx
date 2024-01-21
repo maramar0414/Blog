@@ -1,5 +1,6 @@
 import Container from "./container";
 import { EXAMPLE_PATH } from "../lib/constants";
+import Feedback from "./feedback";
 
 const Footer = () => {
   return (
@@ -15,6 +16,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             {/*Add here social media icons*/}
           </div>
+          <Feedback/>
           {/*Create another div to add the copyright etc*/}
         </div>
       </Container>
