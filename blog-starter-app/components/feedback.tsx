@@ -19,6 +19,15 @@ const Feedback = () => {
       </>
     )
 }
+{/*Feedback form logic // Collect-Send-receive
 
+Collect 
+    - Get values from text area - state
+        -error message if there isn't a message
+    -clean text area
+    -Submit
+
+
+*/}
 
 export default Feedback
