@@ -26,7 +26,14 @@ Collect
         -error message if there isn't a message
     -clean text area
     -Submit
+Send - error message? 
+    -fetch data
 
+Receive
+    -access the route
+
+
+-add email to a .env
 
 */}
 
