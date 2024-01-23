@@ -11,8 +11,24 @@ import {useRef} from "react"
 
 
 const Feedback = () => {
+    const messageRef = useRef<HTMLTextAreaElement>(null);
+
+    async function submitForm(e: React.FormEvent){
+    e.preventDefault();
+    let message = messageRef.current?.value;
+
+    if (!message) {
+        alert("Please, fill up the form");
+        return;
+    }
+    if(messageRef.current){
+        messageRef.current.value = "";
+    }
+    
+}
     return (
-    <><form action="/" onSubmit={submitForm}>
+    <>
+    <form action="/" onSubmit={submitForm}>
     <h1>Send me your thoughts </h1>
     <textarea placeholder="Message..." rows={10} ref={messageRef} >
        </textarea>
