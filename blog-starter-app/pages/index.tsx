@@ -54,3 +54,4 @@ export const getStaticProps = async () => {
     props: { allPosts },
   };
 };
+
