@@ -6,42 +6,57 @@
 /*create the logic to collect data, submit the form and send the data as an email  */
 /*style the form*/}
 
-import {useRef} from "react"
+// FeedbackForm.js
+import React, { useState, FormEvent } from 'react';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
+const FeedbackForm: React.FC = () => {
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
 
-
-const Feedback = () => {
-    const messageRef = useRef<HTMLTextAreaElement>(null);
-
-    async function submitForm(e: React.FormEvent){
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    let message = messageRef.current?.value;
 
-    if (!message) {
-        alert("Please, fill up the form");
-        return;
+    try {
+      // Write data to the 'feedback' node in Firebase Realtime Database
+     // Import the Firebase Realtime Database module
+
+    // ...
+
+    await firebase.database().ref('feedback').push({
+        name,
+        message,
+        timestamp: firebase.database.ServerValue.TIMESTAMP,
+      });
+
+      console.log('Feedback submitted successfully');
+      // Optionally, you can reset the form fields after submission
+      setName('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error submitting feedback:', error.message);
     }
-    if(messageRef.current){
-        messageRef.current.value = "";
-    }
-    
-}
-    return (
-    <>
-    <form 
-    action="/" onSubmit={submitForm}>
-    <div >
-    <h1>Send me your thoughts </h1>
-    <textarea className="border-black border-3" placeholder="Message..." rows={10} ref={messageRef} >
-       </textarea>
-       <button type="submit" className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"> 
-       Send Feedback
-       </button>
-       </div>
-       </form> 
-      </>
-    )
-}
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        Message:
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
+      </label>
+      <br />
+      <button type="submit">Submit Feedback</button>
+    </form>
+  );
+};
+
+export default FeedbackForm;
 {/*Feedback form logic // Collect-Send-receive
 
 Collect 
@@ -60,4 +75,4 @@ Receive
 
 */}
 
-export default Feedback
+
