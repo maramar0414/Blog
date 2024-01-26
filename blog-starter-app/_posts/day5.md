@@ -1,13 +1,13 @@
 ---
-title: "Day 2: CSS layer and tailwind"
-excerpt: " I learned about CSS layers, how to add properties in the root using Tailwind, and played around with some Tailwind properties in the component.."
-coverImage: "/assets/blog/hello-world/cover.jpg"
+title: "Day 5: Next.js and Vercel"
+excerpt: "Today, I revisited Next.js through the School of Code, duplicating a template and deploying it on Vercel. After deployment, I meticulously explored the code structure, adding comments for future reference. Challenges included understanding .md file formats for new blog entries, refreshing React props concepts, and overcoming routing issues during deployment, especially due to oversight regarding the project's location within a folder in a GitHub repository"
+coverImage: "/assets/blog/day5/cover.jpg"
 date: "2023-01-15"
 author:
   name: Maria Araque
   picture: "/assets/blog/authors/maria.jpg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/blog/day5/cover.jpg"
 ---
 
 Today, I refreshed my knowledge of Next.js through the School of Code. I duplicated a Next.js template and successfully deployed it using Vercel. Following the deployment, I delved into the code structure, meticulously examining each folder and file to grasp their respective functions. To solidify my understanding for future reference, I added comments throughout the codebase.
