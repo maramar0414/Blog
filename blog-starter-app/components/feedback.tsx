@@ -7,50 +7,39 @@
 /*style the form*/}
 
 // FeedbackForm.js
-import React, { useState, FormEvent } from 'react';
+import { useState } from 'react';
 import firebase from 'firebase/app';
-import 'firebase/database';
+import 'firebase/firestore';
+import firebaseConfig from '../firebase';
 
-const FeedbackForm: React.FC = () => {
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
+// Initialize Firebase
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
-  const handleSubmit = async (e: FormEvent) => {
+const FeedbackForm = () => {
+  const [feedback, setFeedback] = useState('');
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      // Write data to the 'feedback' node in Firebase Realtime Database
-     // Import the Firebase Realtime Database module
+    // Add your logic to store feedback in Firebase
+    const db = firebase.firestore();
+    await db.collection('feedback').add({
+      feedback,
+      timestamp: new Date(),
+    });
 
-    // ...
-
-    await firebase.database().ref('feedback').push({
-        name,
-        message,
-        timestamp: firebase.database.ServerValue.TIMESTAMP,
-      });
-
-      console.log('Feedback submitted successfully');
-      // Optionally, you can reset the form fields after submission
-      setName('');
-      setMessage('');
-    } catch (error) {
-      console.error('Error submitting feedback:', error.message);
-    }
+    setFeedback('');
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Message:
-        <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
-      </label>
-      <br />
+      <textarea
+        value={feedback}
+        onChange={(e) => setFeedback(e.target.value)}
+        placeholder="Provide your feedback..."
+      />
       <button type="submit">Submit Feedback</button>
     </form>
   );
