@@ -8,7 +8,7 @@ const Intro = () => {
         Blog.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-       Welcome to my #100daysofcode challange
+       Welcome to my #100daysofcodechallenge
       </h4>
     </section>
   );

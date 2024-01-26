@@ -1,8 +1,8 @@
 ---
-title: "Day 1: January 22 "
+title: "Day 1: January 14 "
 excerpt: "Over Christmas, I started a Redwood challenge but found it tough amidst life and demo day approaching. Opting for the 100 days of code, I faced hurdles switching from npm to yarn and initializing the project due to incomplete documentation review. The initial challenge of building an SVG icon component prompted a return to documentation and tutorials for better understanding of Redwood's React components. "
 coverImage: "/assets/blog/prueba001/do_something_great.jpg"
-date: "2024-01-22"
+date: "2024-01-14"
 author:
   name: Maria Araque
   picture: "/assets/blog/authors/maria.jpg"

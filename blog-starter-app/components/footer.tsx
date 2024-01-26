@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             {/*Add here social media icons*/}
           </div>
-         {/*<FeedbackForm/> */} 
+         {/*<FeedbackForm/>*/}
           {/*Create another div to add the copyright etc*/}
         </div>
       </Container>
