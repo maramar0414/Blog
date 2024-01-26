@@ -7,12 +7,12 @@
 /*style the form*/}
 
 // FeedbackForm.js
-import { useState } from 'react';
+/*import { useState } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import firebaseConfig from '../firebase';
 
-// Initialize Firebase
+//Initialize Firebase
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
@@ -33,7 +33,7 @@ const FeedbackForm = () => {
     setFeedback('');
   };
 
-  return (
+ /* return (
     <form onSubmit={handleSubmit}>
       <textarea
         value={feedback}
@@ -42,10 +42,10 @@ const FeedbackForm = () => {
       />
       <button type="submit">Submit Feedback</button>
     </form>
-  );
-};
+  );*/
+//};
 
-export default FeedbackForm;
+//export default FeedbackForm;
 {/*Feedback form logic // Collect-Send-receive
 
 Collect 
