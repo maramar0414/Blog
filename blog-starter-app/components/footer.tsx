@@ -13,9 +13,8 @@ const Footer = () => {
             Maria Araque
           </h3>
             <p className="text-2xl lg:text-[1.5rem] tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Frontend Developer
+            Full-stack Developer
             </p>
-          
           <SocialMedia/>
           
          {/*<FeedbackForm/>*/}
