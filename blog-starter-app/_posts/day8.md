@@ -1,13 +1,13 @@
 ---
 title: "Day 8: Feedback Form in Next.js"
 excerpt: "I worked on adding a feedback form to my blog, following a structured approach from the School of Code. I faced challenges, resolved deployment issues, and decided to create a branch for further work. Despite ongoing deployment challenges, I plan to address them later and express optimism for the next day."
-coverImage: "/assets/blog/day8/cover.jpg"
+coverImage: "/assets/blog/day2/cover.jpg"
 date: "2024-01-21T05:35:07.322Z"
 author:
   name: Maria Araque
   picture: "/assets/blog/authors/maria.jpg"
 ogImage:
-  url: "/assets/blog/day8/cover.jpg"
+  url: "/assets/blog/day2/cover.jpg"
 ---
 
 Today, I worked on adding a feedback form to my blog webpage—an idea I had today. Since the web is already deployed, I can benefit from it from the beginning.
