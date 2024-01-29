@@ -6,6 +6,24 @@
 /*create the logic to collect data, submit the form and send the data as an email  */
 /*style the form*/}
 
+{/*Feedback form logic // Collect-Send-receive
+
+Collect 
+    - Get values from text area - state
+        -error message if there isn't a message
+    -clean text area
+    -Submit
+Send - error message? 
+    -fetch data
+
+Receive
+    -access the route
+
+
+-add email to a .env
+
+*/}
+
 // FeedbackForm.js
 /*import { useState } from 'react';
 import firebase from 'firebase/app';
@@ -46,22 +64,4 @@ const FeedbackForm = () => {
 //};
 
 //export default FeedbackForm;
-{/*Feedback form logic // Collect-Send-receive
-
-Collect 
-    - Get values from text area - state
-        -error message if there isn't a message
-    -clean text area
-    -Submit
-Send - error message? 
-    -fetch data
-
-Receive
-    -access the route
-
-
--add email to a .env
-
-*/}
-
 

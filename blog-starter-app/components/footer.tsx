@@ -1,4 +1,6 @@
 import Container from "./container";
+import SocialMedia from "./social-media";
+
 import { EXAMPLE_PATH } from "../lib/constants";
 //import FeedbackForm from "./feedback";
 
@@ -13,11 +15,11 @@ const Footer = () => {
             <p className="text-2xl lg:text-[1.5rem] tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
             Frontend Developer
             </p>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            {/*Add here social media icons*/}
-          </div>
+          
+          <SocialMedia/>
+          
          {/*<FeedbackForm/>*/}
-          {/*Create another div to add the copyright etc*/}
+          
         </div>
       </Container>
     </footer>
