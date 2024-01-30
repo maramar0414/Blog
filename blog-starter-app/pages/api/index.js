@@ -1,4 +1,4 @@
-const formValues = { username, subject, email, message };
+/*const formValues = { username, subject, email, message };
 let result;
 try {
   let data = await fetch("/api/contact", {
@@ -13,4 +13,4 @@ try {
 } catch (error) {
   result = { message: `Failed: ${error.message}` };
 }
-alert(result.message);
+alert(result.message);*/

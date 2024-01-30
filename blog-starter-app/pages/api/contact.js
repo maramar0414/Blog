@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+/*import nodemailer from "nodemailer";
 
 // Replace the email and password values with a string containing your email and password
 const email = '<your-gmail-goes-here>'
@@ -43,3 +43,4 @@ export default async function handler(req, res) {
     }
   }
 }
+*/
