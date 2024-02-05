@@ -1,0 +1,30 @@
+---
+title: "Day 16: Social Media Icons"
+excerpt: ""
+coverImage: "/assets/blog/day3/cover.jpg"
+date: "2023-01-29"
+author:
+  name: Maria Araque
+  picture: "/assets/blog/authors/maria.jpg"
+ogImage:
+  url: "/assets/blog/day3/cover.jpg"
+---
+
+I've made the decision to step back from the IPA issues for now. I'm eager to share my blog ASAP, so after a week of struggling, I've concluded it's time to adjust my plan. I'm determined to incorporate a feedback form into my blog, but I realize I can't tackle it alone. Here's the revised plan:
+
+1. Take a breather from the problem.
+2. Seek assistance.
+3. Develop an interim solution.
+
+Today, I'm focusing on that interim solution. I've added social media icons, including my email address. Here's my agenda for today:
+
+- Search for social media icon images.
+- Incorporate the images into the project.
+- Integrate them into the footer.
+- Style them into three columns with responsiveness.
+
+**Learnings:**
+Today, I discovered the benefits of working with isolated components. Additionally, I mastered using Flexbox with Tailwind.
+
+**Challenges I Faced:**
+Initially, I struggled to apply styling with Tailwind. I took a step back, implemented the desired styling with CSS, and once satisfied, I sought how to replicate it with Tailwind, referencing a Tailwind cheat sheet along the way.

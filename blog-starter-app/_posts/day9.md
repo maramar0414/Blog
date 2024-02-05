@@ -1,5 +1,5 @@
 ---
-title: "Day 9: "
+title: "Day 9: IPA"
 excerpt: " "
 coverImage: "/assets/blog/day1/cover.jpg"
 date: "2024-01-22"
