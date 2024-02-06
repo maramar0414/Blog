@@ -1,13 +1,13 @@
 ---
-title: "Day 9: IPA"
+title: "Day 9: IPAs"
 excerpt: " "
-coverImage: "/assets/blog/day1/cover.jpg"
+coverImage: "/assets/blog/day9/cover.jpg"
 date: "2024-01-22"
 author:
   name: Maria Araque
   picture: "/assets/blog/authors/maria.jpg"
 ogImage:
-  url: "/assets/blog/day1/cover.jpg"
+  url: "/assets/blog/day9/cover.jpg"
 ---
 
 Today, I focused on developing the logic to collect data from the feedback form. After reviewing previous IPA projects:

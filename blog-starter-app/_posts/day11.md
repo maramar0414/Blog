@@ -1,13 +1,13 @@
 ---
-title: "Day 11: "
+title: "Day 11: Feedback Form alternative"
 excerpt: ""
-coverImage: "/assets/blog/day3/cover.jpg"
+coverImage: "/assets/blog/day11/cover.jpg"
 date: "2023-01-24"
 author:
   name: Maria Araque
   picture: "/assets/blog/authors/maria.jpg"
 ogImage:
-  url: "/assets/blog/day3/cover.jpg"
+  url: "/assets/blog/day11/cover.jpg"
 ---
 Today, I am working on an alternative to the feedback form. I really like the idea of having a feedback form on the web; I think it is useful for me and makes my blog different from the rest. Initially, I dreamed on the idea of not having a database and storing the data directly to my email. I started a tutorial to use Nodemailer; however, there is a security risk that I don’t want to take.
 
